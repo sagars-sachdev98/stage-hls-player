@@ -1,16 +1,19 @@
 # stage_hls_assignment
 
-A new Flutter project.
 
-## Getting Started
+## UI Reference
 
-This project is a starting point for a Flutter application.
+Inspired by [https://www.stage.in](http://www.stage.in).
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+![App Screenshot 1](screenshots/Screenshot_1.png)   ![App Screenshot 2](screenshots/Screenshot_2.png)
+
+
+![App Screenshot 3](screenshots/Screenshot_3.png)    ![App Screenshot 4](screenshots/Screenshot_4.png)
+
+
+![App Screenshot 5](screenshots/Screenshot_5.png)    ![App Screenshot 6](screenshots/Screenshot_6.png)
+

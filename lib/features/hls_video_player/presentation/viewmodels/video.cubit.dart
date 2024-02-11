@@ -82,7 +82,6 @@ class VideoCubit extends Cubit<VideoState> {
               Navigator.pop(context);
               showBottomSheet(
                 context: context,
-                backgroundColor:  const Color(0xff151515),
                 builder: (BuildContext context) {
                   // Return the content of the bottom sheet
                   return SizedBox(
