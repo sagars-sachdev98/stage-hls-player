@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:stage_hls_assignment/core/presentation/views/base.view.dart';
 import 'package:stage_hls_assignment/core/services/network_services/dio_rest_service.dart';
 import 'package:stage_hls_assignment/features/hls_video_player/data/repositories/video_impl.repository.dart';
-import 'package:stage_hls_assignment/features/hls_video_player/presentation/viewmodels/video.cubit.dart';
-import 'package:stage_hls_assignment/features/hls_video_player/presentation/viewmodels/video.state.dart';
+import 'package:stage_hls_assignment/features/hls_video_player/presentation/cubits/video.cubit.dart';
+import 'package:stage_hls_assignment/features/hls_video_player/presentation/cubits/video.state.dart';
 import 'package:stage_hls_assignment/features/hls_video_player/presentation/widgets/hls_video_palyer.dart';
 import 'package:stage_hls_assignment/features/hls_video_player/presentation/widgets/loading_video_player.dart';
 

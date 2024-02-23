@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:stage_hls_assignment/core/utils/enum/attribute_type.enum.dart';
 import 'package:stage_hls_assignment/features/hls_video_player/data/repositories/video.repository.dart';
-import 'package:stage_hls_assignment/features/hls_video_player/presentation/viewmodels/video.state.dart';
+import 'package:stage_hls_assignment/features/hls_video_player/presentation/cubits/video.state.dart';
 import 'package:stage_hls_assignment/features/hls_video_player/utils/hls_parser.dart';
 import 'package:video_player/video_player.dart';
 
@@ -52,14 +52,18 @@ class VideoCubit extends Cubit<VideoState> {
           resolutions = HlsParser.sortResolutions(resolutions);
           resolutions.insert(0, "Auto");
           if (kDebugMode) {
-            print('$attribute: ${resolutions}');
+            print('$attribute: $resolutions');
           }
         } else {
-          print('$attribute: $values');
+          if (kDebugMode) {
+            print('$attribute: $values');
+          }
         }
       });
     } else {
-      print('Failed to fetch and extract attributes.');
+      if (kDebugMode) {
+        print('Failed to fetch and extract attributes.');
+      }
     }
 
     // Once all operations are done, return

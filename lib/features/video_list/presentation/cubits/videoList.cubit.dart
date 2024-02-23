@@ -11,17 +11,11 @@ class VideoListCubit extends Cubit<VideoListState> {
 
   Future<void> _fetchVideoListDetails() async {
     try {
-      // emit(MoviesDetailsLoadingState());
-      final _result = await repository.getVideos();
-      emit(VideoListState(videoList: _result ?? []));
+      
+      final result = await repository.getVideos();
+      emit(VideoListState(videoList: result ?? []));
     } catch (e) {
       emit(VideoListState(videoList: const [], errorMessage: e.toString()));
     }
-
-    // if (_result.data != null) {
-    //   emit(MoviesDetailsLoadedState(_result.data, movieId));
-    // } else {
-    //   emit(MoviesDetailsErrorState(_result.error?.message ?? ''));
-    // }
   }
 }
